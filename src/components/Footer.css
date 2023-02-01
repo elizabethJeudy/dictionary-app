@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  color: var(--box-color);
+}
+
+a {
+  color: var(--word-type-color);
+  text-decoration: none;
+}
