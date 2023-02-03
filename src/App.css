@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+:root {
+  --search-word-color: #83635C;
+  --btn-color: #92886F;
+  --word-type-color: #A25937;
+  --box-color: #ffffffd2;
+  /* change of width sizes for media queries */
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+body {
+  background: url(images/bookshelfbg.webp);
+  background-size: cover;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--word-type-color);
+}
