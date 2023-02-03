@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Search.css";
-import { SlMagnifier } from "react-icons/sl";
 
 export default function Search() {
 	// displays when searching for keyword
