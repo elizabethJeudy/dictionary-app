@@ -1,12 +1,21 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "./Search.css";
 
 export default function Search() {
-	// displays when searching for keyword
 	let [keyword, setKeyword] = useState("");
+
+	// grabs the searched word from api
+	function handleResponse(response) {
+		console.log(response.data[0]);
+	}
+
+	// displays when searching for keyword
 	function search(event) {
 		event.preventDefault();
-		alert(`Searching for ${keyword} definition`);
+		// creates API key when user searches for a word
+		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+		axios.get(apiUrl).then(handleResponse);
 	}
 
 	// pulls the keyword typed in search
