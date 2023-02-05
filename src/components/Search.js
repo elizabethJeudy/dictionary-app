@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
+import SearchResults from "./components/SearchResults";
 
 // api documentation link: https://dictionaryapi.dev/
 
@@ -10,6 +11,7 @@ export default function Search() {
 	// grabs the searched word from api
 	function handleResponse(response) {
 		console.log(response.data[0]);
+		console.log(response.data[0].meanings);
 	}
 
 	// displays when searching for keyword
@@ -38,6 +40,7 @@ export default function Search() {
 					className="search-input"
 				/>
 			</form>
+			<SearchResults />
 		</div>
 	);
 }
