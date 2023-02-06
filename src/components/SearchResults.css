@@ -2,8 +2,10 @@
   box-sizing: border-box;
   border: none;
   border-radius: 1rem;
-  margin: 2rem;
+  margin-top: 2rem;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.332);
   color: rgba(8, 8, 8, 0.993);
+  /* background: url(../images/dictionary.PNG);*/
+  background-size: cover;
+  background-color: rgba(240, 248, 255, 0.313);
 }
