@@ -29,3 +29,11 @@ body {
 h1 {
   color: var(--word-type-color);
 }
+
+h2 {
+  color: black;
+}
+
+p {
+  color: black;
+}

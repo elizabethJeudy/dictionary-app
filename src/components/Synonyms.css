@@ -1,0 +1,9 @@
+.syn {
+  color: brown;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(245, 245, 220, 0.236);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 2px;
+}
