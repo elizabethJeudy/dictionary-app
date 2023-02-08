@@ -8,6 +8,6 @@ p {
 }
 
 a {
-  color: var(--word-type-color);
+  color: var(--syn-color);
   text-decoration: none;
 }
