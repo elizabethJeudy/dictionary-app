@@ -5,10 +5,12 @@
 
 
 :root {
-  --search-word-color: #83635C;
-  --btn-color: #92886F;
+  --speech-color: #83635C;
+  --search-color: #92886F;
   --word-type-color: #A25937;
-  --box-color: #ffffffd2;
+  --box-color: #f8f3f3d2;
+  --example-color: rgb(180, 129, 87);
+  --syn-color: rgb(143, 39, 39);
   /* change of width sizes for media queries */
   --container-width-lg: 75%;
   --container-width-md: 86%;
@@ -16,9 +18,9 @@
 }
 
 body {
-  background: url(images/bookshelfbg.webp);
-  background-size: cover;
-  color: white
+  padding: 20px;
+  background: url(images/woodbg.jpeg);
+  color: white;
 }
 
 .container {
@@ -31,9 +33,21 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: var(--search-color);
 }
 
-p {
-  color: black;
+h3 {
+  color: var(--speech-color);
+}
+
+
+section {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  color: rgba(8, 8, 8, 0.993);
+  background-size: cover;
+  background-color: rgba(6, 6, 6, 0.636);
 }
