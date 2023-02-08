@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./Search.css";
 import SearchResults from "./SearchResults";
 
 // api documentation link: https://dictionaryapi.dev/

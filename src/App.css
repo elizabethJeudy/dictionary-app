@@ -19,16 +19,14 @@
 
 body {
   padding: 20px;
-  background: url(images/woodbg.jpeg);
+  background: url(images/wood.jpeg);
   color: white;
 }
 
-.container {
-  width: var(--container-width-lg);
-  margin: 0 auto;
-}
 
 h1 {
+  font-size: 5rem;
+  text-align: center;
   color: var(--word-type-color);
 }
 
@@ -40,6 +38,19 @@ h3 {
   color: var(--speech-color);
 }
 
+button {
+  background: transparent;
+  border: none;
+  color: rgb(180, 129, 87);
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
 
 section {
   box-sizing: border-box;
@@ -50,4 +61,30 @@ section {
   color: rgba(8, 8, 8, 0.993);
   background-size: cover;
   background-color: rgba(6, 6, 6, 0.636);
+}
+
+/* synonyms component */
+.syn {
+  color: var(--syn-color);
+  font-weight: bold;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.579);
+  border-radius: 5px;
+  padding: 0 5px 5px 5px;
+  margin-left: 10px;
+}
+
+/* search component */
+.search-input {
+  width: 35rem;
+  height: 2rem;
+  border: none;
+  border-radius: 5rem;
+  text-align: center;
+}
+
+/* meaning component */
+.example {
+  color: var(--example-color);
+  padding-left: 15px;
 }
