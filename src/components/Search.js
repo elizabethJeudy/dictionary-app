@@ -35,7 +35,7 @@ export default function Search() {
 	// renders whenever user searches for a word
 	// {results} receives results from API
 	return (
-		<div className="container searchContainer">
+		<div className="Search">
 			<h1>Dictionary</h1>
 			<form onSubmit={search}>
 				<input

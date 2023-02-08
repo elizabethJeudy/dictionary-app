@@ -1,4 +1,4 @@
 .example {
-  color: rgb(98, 61, 31);
-  padding: 15px;
+  color: var(--example-color);
+  padding-left: 15px;
 }
