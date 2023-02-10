@@ -6,8 +6,10 @@ import Search from "./components/Search";
 export default function App() {
 	return (
 		<div className="App">
-			<Search />
-			<Footer />
+			<div className="container">
+				<Search defaultKeyword="book" />
+				<Footer />
+			</div>
 		</div>
 	);
 }

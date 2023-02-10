@@ -4,26 +4,29 @@ import SearchResults from "./SearchResults";
 
 // api documentation link: https://dictionaryapi.dev/
 
-export default function Search() {
+export default function Search(props) {
 	// this state retrieves the word user searched
-	let [keyword, setKeyword] = useState("");
-
+	let [keyword, setKeyword] = useState(props.defaultKeyword);
 	// this state updates whenever user searches
 	let [results, setResults] = useState(null);
-
+	// checks if user has searched a word
+	let [loaded, setLoaded] = useState(false);
 	// grabs the searched word from api
 	function handleResponse(response) {
-		console.log(response.data[0]);
-		console.log(response.data[0].meanings);
 		setResults(response.data[0]);
 	}
 
 	// displays when searching for keyword
-	function search(event) {
-		event.preventDefault();
+	function search() {
 		// creates API key when user searches for a word
 		let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
 		axios.get(apiUrl).then(handleResponse);
+	}
+
+	// calls API url to retrieve results
+	function handleSubmit(event) {
+		event.preventDefault();
+		search();
 	}
 
 	// pulls the keyword typed in search
@@ -31,20 +34,33 @@ export default function Search() {
 		setKeyword(event.target.value);
 	}
 
-	// renders whenever user searches for a word
+	function load() {
+		setLoaded(true);
+		search();
+	}
+
+	// renders is loaded (user searches word)
 	// {results} receives results from API
-	return (
-		<div className="Search">
-			<h1>Dictionary</h1>
-			<form onSubmit={search}>
-				<input
-					type="search"
-					onChange={handleKeywordChange}
-					placeholder="What word would you like to search?"
-					className="search-input"
-				/>
-			</form>
-			<SearchResults results={results} />
-		</div>
-	);
+	if (loaded) {
+		return (
+			<div className="Search">
+				<h1>Dictionary</h1>
+				<form onSubmit={handleSubmit}>
+					<input
+						type="search"
+						onChange={handleKeywordChange}
+						placeholder="What word would you like to search?"
+						className="search-input"
+					/>
+				</form>
+				<div className="hint">
+					Suggested words: books, wine, yoga, sunshine....
+				</div>
+				<SearchResults results={results} />
+			</div>
+		);
+	} else {
+		load();
+		return "Loading";
+	}
 }
