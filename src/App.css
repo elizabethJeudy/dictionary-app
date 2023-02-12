@@ -21,6 +21,7 @@ h1 {
 }
 
 h2 {
+  padding-top: 50px;
   color: var(--search-color);
 }
 
@@ -53,7 +54,6 @@ button {
   border: none;
   color: rgb(180, 129, 87);
   font-size: 2rem;
-  padding-top: 50px;
 }
 
 
