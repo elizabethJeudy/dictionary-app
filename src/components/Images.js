@@ -9,10 +9,10 @@ export default function Images(props) {
 				<div className="row">
 					{props.images.map(function (photo, index) {
 						return (
-							<div className="col-3" key={index}>
+							<div className="col-2" key={index}>
 								<a href="{photo.src.original}" target="_blank">
 									<img
-										src={photo.src.medium}
+										src={photo.src.landscape}
 										alt="searched word"
 										className="img-fluid"
 									/>

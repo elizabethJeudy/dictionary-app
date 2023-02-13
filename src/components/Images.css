@@ -1,9 +1,3 @@
-.Images img {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  float: left;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
+img {
+  border: 1px solid black;
 }
