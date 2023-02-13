@@ -6,9 +6,7 @@ export default function Phonetics(props) {
 		<div className="Phonetics">
 			{props.phonetics.text}
 			<a href={props.phonetics.audio} target="_blank" rel="noreferrer">
-				<button>
-					<RxSpeakerLoud />
-				</button>
+				<RxSpeakerLoud />
 			</a>
 		</div>
 	);
