@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchResults.css";
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 
