@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import SearchResults from "./SearchResults";
+import "./Search.css";
 import Images from "./Images";
 // api documentation link: https://dictionaryapi.dev/
 
@@ -32,7 +33,7 @@ export default function Search(props) {
 		// images api
 		let pexelsApiKey =
 			"Qxfq5tSwsRmhhqGVN5pDBVG9CtF4B9Glf2CiW9eMlCHVZpT5VqHNQ9uI";
-		let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=4`;
+		let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=3`;
 		// authorization for apikey, solution documentation here
 		let headers = { Authorization: `Bearer ${pexelsApiKey}` };
 		axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
