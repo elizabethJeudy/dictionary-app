@@ -1,5 +1,4 @@
 import React from "react";
-import "./Images.css";
 
 export default function Images(props) {
 	if (props.images) {

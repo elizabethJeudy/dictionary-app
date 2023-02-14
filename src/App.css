@@ -1,33 +1,54 @@
 /* 
 google fonts 
 Anton regular 400
-Josefin Slab regular 400
-Work Sans thin 100 & extra light italic 200 
+Josefin Slab regular 400 & semibold 600
+Work Sans thin 100 & extra light italic 200 & semibold 600
 font-family: 'Anton', sans-serif;
 font-family: 'Josefin Slab', serif;
 font-family: 'Work Sans', sans-serif;
 */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Slab&family=Work+Sans:ital,wght@0,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Slab:wght@400;600&family=Work+Sans:ital,wght@0,100;0,600;1,200&display=swap');
 
 :root {
   --bg-color: #CDCFC0;
   --section-color: #F1EBE5;
+  --example-color: #A1200D;
+  --synonym-color: #976343;
 }
 
 
 body {
   background: var(--bg-color);
-
 }
 
 h1 {
   font-family: 'Anton', sans-serif;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Josefin Slab', serif;
+  padding-top: 25px;
+  text-align: start;
+}
+
+h3 {
+  font-family: 'Anton', sans-serif;
+}
+
+em {
+  color: var(--example-color);
 }
 
 section {
   background: var(--section-color);
+  padding: 15px;
+  text-align: start;
+}
+
+img {
+  border: 1px solid black;
+  display: inline-block;
+  margin-top: 15px;
+  text-align: center;
 }

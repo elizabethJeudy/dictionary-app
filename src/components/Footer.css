@@ -9,6 +9,6 @@ p {
 }
 
 a {
-  color: var(--syn-color);
+  color: var(--example-color);
   text-decoration: none;
 }

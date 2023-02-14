@@ -1,16 +1,20 @@
+.Search {
+  text-align: center;
+}
+
 .search-input {
   background: transparent;
   border: 1px solid black;
+  color: var(--synonym-color);
   width: 20rem;
   text-align: center;
   font-family: 'Work Sans', sans-serif;
-  font-weight: 200;
   font-style: italic;
 }
 
 .hint {
   font-family: 'Work Sans', sans-serif;
-  font-weight: bold;
+
 }
 
 

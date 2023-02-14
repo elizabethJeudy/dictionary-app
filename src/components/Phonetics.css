@@ -1,0 +1,18 @@
+.Phonetics {
+  border: 1px solid black;
+  ;
+  width: 10rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.phoneticsText {
+  padding: 15px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 18px;
+}
+
+.phoneticsAudio {
+  color: var(--synonym-color);
+  font-size: 20px;
+}

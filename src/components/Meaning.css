@@ -1,0 +1,16 @@
+.number {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+}
+
+.definition {
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
+
+}
+
+.example {
+  padding-left: 20px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+}
