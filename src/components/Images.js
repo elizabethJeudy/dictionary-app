@@ -8,8 +8,8 @@ export default function Images(props) {
 				<div className="row">
 					{props.images.map(function (photo, index) {
 						return (
-							<div className="col-2" key={index}>
-								<a href="{photo.src.original}" target="_blank">
+							<div className="col-4" key={index}>
+								<a href="{photo.src.original}">
 									<img
 										src={photo.src.landscape}
 										alt="searched word"

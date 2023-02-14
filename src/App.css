@@ -14,6 +14,7 @@ font-family: 'Work Sans', sans-serif;
   --section-color: #F1EBE5;
   --example-color: #A1200D;
   --synonym-color: #976343;
+  --container-width-sm: 90%;
 }
 
 
@@ -49,6 +50,15 @@ section {
 img {
   border: 1px solid black;
   display: inline-block;
-  margin-top: 15px;
+  margin: 2rem;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+    min-width: 200px;
+    margin-left: 20px;
+
+  }
 }
