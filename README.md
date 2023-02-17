@@ -1,4 +1,5 @@
 # Dictionary App
+https://dict-app-react.netlify.app/
 
 #### created with React
 
@@ -13,4 +14,4 @@ User will be able to
 5. see 3 variations of definition
 6. see synonyms for words which apply
 
-### Snippet
+
