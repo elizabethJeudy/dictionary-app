@@ -1,7 +1,7 @@
 # Dictionary App
 https://dict-app-react.netlify.app/
 
-#### created with React
+#### A Dictionary App created using React
 
 ### Description
 
