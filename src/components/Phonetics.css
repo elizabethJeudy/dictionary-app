@@ -15,4 +15,5 @@
 .phoneticsAudio {
   color: var(--synonym-color);
   font-size: 20px;
+  cursor: pointer;
 }
